@@ -1,6 +1,6 @@
 {
   "name": "shack-herald-client",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "client library for announcing messages over the shack herald",
   "main": "lib/index.js",
   "scripts": {
@@ -13,5 +13,7 @@
     "hiredis": "^0.1.17",
     "redis": "^0.12.1"
   },
-  "prepublish": "coffee -o lib -c src/*.coffee"
+  "scripts" : {
+    "prepublish": "coffee -o lib -c src/*.coffee"
+  }
 }
