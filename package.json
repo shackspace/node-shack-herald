@@ -1,0 +1,17 @@
+{
+  "name": "shack-herald-client",
+  "version": "0.0.1",
+  "description": "client library for announcing messages over the shack herald",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rashfael",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "hiredis": "^0.1.17",
+    "redis": "^0.12.1"
+  },
+  "prepublish": "coffee -o lib -c src/*.coffee"
+}
